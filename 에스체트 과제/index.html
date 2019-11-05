@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Toss</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bar off">
+            <a href="#">
+                <div class="logo"></div>
+            </a>
+            <a href="#">FAQ</a>
+            <a href="#">공인인증센터</a>
+            <a href="#">토스보험서비스</a>
+            <a href="#">회사소개</a>
+            <a href="#">ENG</a>
+
+        </div>
+        <div class="header">
+            <div class="event">
+                <a href="#">자주 가는 곳에서 10% 캐시백</a>
+            </div>
+            <div class="image">
+                <video width="200px" height="200px" src="https://static.toss.im/web-general/homepage/static/videos/tosscard-banner.mp4" loop autoplay muted></video></div>
+            <div class="tosscard">
+                <a href="#">토스카드 <img src="https://static.toss.im/web-general/homepage/static/images/top-banner-arrow.png"></a>
+            </div>
+        </div>
+        <section class="main">
+            <div class="text">
+                <h1>내 모든 돈을, <br>토스에서 간편하게.</h1>
+                <div class="store">
+                    <div class="playstore">
+                        <a href="#"><img src="https://static.toss.im/web-general/homepage/static/images/googleplay.png" alt="플레이스토어 아이콘" style="margin-right: 10px;">Google Play
+                        </a>
+                    </div>
+                    <div class="appstore">
+                        <a href="#"><img src="https://static.toss.im/web-general/homepage/static/images/apple-white.png " alt="앱스토어 아이콘" style="margin-right: 10px;">App Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="button"><img src="https://static.toss.im/web-general/homepage/static/images/down-arrow.png" width="24" height="12" onclick="button_click();"></div>
+        </section>
+        <section class="achievement">
+            <div class="ranking">
+                <a href="#"><img src="https://static.toss.im/web-general/homepage/static/images/legacy/cert03.png" width="202" height="84"></a>
+                <a href="#"><img src="https://static.toss.im/web-general/homepage/static/images/legacy/cert01.png" width="202" height="84"></a>
+                <a href="#"><img src="https://static.toss.im/web-general/homepage/static/images/legacy/cert02.png" width="202" height="84"></a>
+            </div>
+            <div class="achivment_text">
+                <div class="off">간편 송금 압도적 <strong>1위</strong></div>
+                <div class="off">누적 다운로드 <strong><span id="down">2,300</span>만</strong></div>
+                <div class="off">누적 거래액 <strong><span id="trade">36</span>조원</strong></div>
+                <div class="off">
+                    <div>출시 이래 보안사고 <strong>0건</strong></div>
+                    <div class="rank_button">
+                        <a href="#">
+                            토스의 보안 ＞
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                2019년 3월 기준
+            </div>
+            <div class="bg_img off">
+                <img src="https://static.toss.im/web-general/homepage/static/images/legacy/particle.png" width="1150" height="500">
+            </div>
+        </section>
+        <section class="remittance">
+            <div class="left">
+                <div class="intro">
+                    송금은 귀찮지만<br>토스는 쉽습니다
+                </div>
+                <div class="tab">
+                    <div class="active" onclick="phone_tab_active(0);">
+                        계좌간편복사
+                    </div>
+                    <div onclick="phone_tab_active(1);">
+                        더치페이
+                    </div>
+                    <div onclick="phone_tab_active(2);">
+                        자동이체
+                    </div>
+                    <div onclick="phone_tab_active(3);">
+                        QR결제
+                    </div>
+                </div>
+                <div class="ex">
+                    <div class="active">
+                        계좌 번호를 복사하기만 하면 자동으로 입력됩니다.
+                    </div>
+                    <div>
+                        더치페이할 때도 직접 계산하지 않고 쉽게 주고받으세요.
+                    </div>
+                    <div>
+                        장기적으로 돈을 보내야 하시나요?<br>자동이체도 이젠 간편하게 토스!
+                    </div>
+                    <div>
+                        현금을 받기 위해 일일이 계좌번호를 불러주고 계신가요?<br> QR코드를 발급받아 1초 만에 받아보세요.
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="phone">
+                    <img class="iPhone" src="https://static.toss.im/web-general/homepage/static/images/legacy/p1_device.png" width="526" height="789">
+                    <img class="effect" src="https://static.toss.im/web-general/homepage/static/images/legacy/transfer_effect.png" width="490" height="234">
+                    <div class="phone_tab">
+                        <img src="https://static.toss.im/web-general/homepage/static/images/legacy/3.0/p1-screen01.png" width="274" height="487">
+                        <img src="https://static.toss.im/web-general/homepage/static/images/legacy/3.0/p1-screen02.png" width="274" height="487">
+                        <img src="https://static.toss.im/web-general/homepage/static/images/legacy/3.0/p1-screen03.png" width="274" height="487">
+                        <img src="https://static.toss.im/web-general/homepage/static/images/legacy/3.0/p1-screen04.jpg" width="274" height="487">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="account">
+            <div class="left">
+                <div class="intro">
+                    계좌관리는 귀찮지만<br>토스는 쉽습니다
+                </div>
+                <div class="acex">
+                    간편 지문 입력만으로 여러 계좌를<br> 한 번에 조회하고 관리할 수 있습니다.
+                </div>
+            </div>
+            <div class="right">
+                <ul class="bank">
+                    <li class="off">
+                        <img src="https://static.toss.im/web-general/homepage/static/images/legacy/bank/banklogo004.png" width="28" height="28">
+                        <div class="bank_text">
+                            <div class="name">
+                                국민은행
+                            </div>
+                            <div class="balance">
+                                <span id="km">2,134,000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="off">
+                        <img src="https://static.toss.im/web-general/homepage/static/images/legacy/bank/banklogo088.png" width="28" height="28">
+                        <div class="bank_text">
+                            <div class="name">
+                                신한은행
+                            </div>
+                            <div class="balance">
+                                <span id="sh">1,126,600</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="off">
+                        <img src="https://static.toss.im/web-general/homepage/static/images/legacy/bank/banklogo081.png" width="28" height="28">
+                        <div class="bank_text">
+                            <div class="name">
+                                하나은행
+                            </div>
+                            <div class="balance">
+                                <span id="hn">684,000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="off">
+                        <img src="https://static.toss.im/web-general/homepage/static/images/legacy/bank/banklogo020.png" width="28" height="28">
+                        <div class="bank_text">
+                            <div class="name">
+                                우리은행
+                            </div>
+                            <div class="balance">
+                                <span id="wr">339,050</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="off">
+                        <img src="https://static.toss.im/web-general/homepage/static/images/legacy/bank/banklogo247.png" width="28" height="28">
+                        <div class="bank_text">
+                            <div class="name">
+                                농협은행
+                            </div>
+                            <div class="balance">
+                                <span id="nh">1,412,000</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bank_button" onclick="bank_list_open();">
+                제휴 은행 모두보기
+            </div>
+            <div class="bank_all">
+                <ul>
+                    <li><img src="https://static.toss.im/web-general/homepage/static/images/legacy/banks01.png" width="146" height="376"></li>
+                    <li><img src="https://static.toss.im/web-general/homepage/static/images/legacy/banks02.png" width="146" height="376"></li>
+                    <li><img src="https://static.toss.im/web-general/homepage/static/images/legacy/banks03.png" width="146" height="376"></li>
+                    <li><img src="https://static.toss.im/web-general/homepage/static/images/legacy/banks04.png" width="146" height="376"></li>
+                </ul>
+            </div>
+            <div class="white"></div>
+        </section>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

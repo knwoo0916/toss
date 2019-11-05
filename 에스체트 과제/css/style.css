@@ -1,0 +1,535 @@
+    * {
+        margin: 0;
+        padding: 0;
+        color: #333;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .bar {
+        width: 1000px;
+        height: 58px;
+        line-height: 58px;
+        z-index: 11;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .bar.off .logo {
+        width: 78px;
+        height: 20px;
+        background-image: url('https://static.toss.im/tds/icon/svg/logo-white.svg');
+        float: left;
+    }
+
+    .bar.on .logo {
+        width: 78px;
+        height: 20px;
+        background-image: url('https://static.toss.im/tds/icon/svg/logo.svg');
+        float: left;
+    }
+
+    .bar.off {
+        position: absolute;
+        top: 150px;
+    }
+
+    .bar.on {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: #fff;
+        border-bottom: solid 1px #ddd;
+    }
+
+    .bar.on .logo {
+        margin-left: 450px;
+    }
+
+    .bar .logo {
+        margin-top: 19px;
+        margin-right: 470px;
+    }
+
+    .bar > a {
+        margin-right: 15px;
+    }
+
+    .header {
+        margin: 0 auto;
+        width: 1024px;
+        height: 150px;
+    }
+
+    .header > * {
+        float: left;
+        margin-right: 200px;
+    }
+
+    .header > .event {
+        font-size: 22px;
+        margin-top: 60px;
+    }
+
+    .header > .image {
+        margin-right: 200px;
+    }
+
+    .header > .tosscard {
+        width: 110px;
+        font-size: 22px;
+        font-weight: bold;
+        margin: 0;
+        margin-top: 60px;
+    }
+
+    section.main {
+        width: 100%;
+        height: 787px;
+        background-image: url('https://static.toss.im/web-general/homepage/static/images/hero.png');
+        background-size: 100%;
+        background-position: 50%;
+        z-index: 10;
+        position: absolute;
+    }
+
+    section.main h1 {
+        font-size: 48px;
+        color: #fff;
+    }
+
+    section.main .store > * {
+        float: left;
+        margin-top: 40px;
+    }
+
+    section.main .playstore a {
+        padding: 13px;
+        width: 193px;
+        height: 54px;
+        border: solid 1px #fff;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 25px;
+    }
+
+    section.main .playstore:hover {
+        margin-top: 38px;
+        transition: all 0.8s;
+    }
+
+    section.main .appstore a {
+        padding: 13px;
+        width: 174px;
+        height: 54px;
+        border: solid 1px #fff;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    section.main .appstore:hover {
+        margin-top: 38px;
+        transition: all 0.8s;
+    }
+
+    section.main .text {
+        position: absolute;
+        top: 270px;
+        left: 34%;
+        transform: translate(-50%);
+    }
+
+    section.achievement {
+        width: 100%;
+        height: 1024px;
+        margin-top: 787px;
+    }
+
+    .achivment_text {
+        position: absolute;
+        left: 50%;
+        transform: translate(-43%);
+        top: 1320px;
+        width: 1140px;
+        height: 500px;
+        font-size: 52px;
+    }
+
+    .achivment_text > div.off {
+        opacity: 0;
+    }
+
+    .achivment_text > div.on:nth-child(1) {
+        animation: rank_anim 0.3s;
+    }
+
+    .achivment_text > div.on:nth-child(2) {
+        animation: rank_anim 0.6s;
+    }
+
+    .achivment_text > div.on:nth-child(3) {
+        animation: rank_anim 0.9s;
+    }
+
+    .achivment_text > div.on:nth-child(4) {
+        animation: rank_anim 1.2s;
+    }
+
+    .achivment_text > div.on:nth-child(4) > * {
+        float: left;
+    }
+
+    .button {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 750px;
+        cursor: pointer;
+    }
+
+    section.achievement .ranking {
+        position: absolute;
+        left: 42%;
+        transform: translate(-50%);
+        margin-top: 240px;
+    }
+
+    section.achievement .ranking > * {
+        margin-right: 20px;
+    }
+
+    section.achievement .ranking img {
+        opacity: 0.8;
+        transition: 0.5s;
+    }
+
+    section.achievement .ranking img:hover {
+        opacity: 1;
+    }
+
+    .rank_button {
+        margin-top: 20px;
+        margin-left: 5px;
+        width: 140px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        border: solid 1px #768399;
+        border-radius: 50px;
+    }
+
+    .rank_button:hover {
+        background-color: #454f5d;
+        transition: 0.8s;
+    }
+
+    .day {
+        font-size: 14px;
+        position: absolute;
+        margin-top: 750px;
+        margin-left: 470px;
+    }
+
+    .bg_img {
+        position: absolute;
+        left: 49%;
+        margin-top: 230px;
+        z-index: -1;
+    }
+
+    .bg_img.off {
+        transform: translate(-50%) scale(0);
+        transition: all 1s;
+    }
+
+    .bg_img.on {
+        transform: translate(-50%) scale(1);
+        transition: all 1s;
+    }
+
+    .rank_button:hover a {
+        display: block;
+        color: #fff;
+        transition: all 0.8s;
+    }
+
+    .page_on {
+        animation: page_anim 0.8s;
+    }
+
+    section.remittance {
+        width: 1024px;
+        height: 1020px;
+        margin: 0 auto;
+    }
+
+    section.remittance > * {
+        float: left;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 50%;
+    }
+
+    .remittance .intro {
+        font-size: 52px;
+        margin-top: 380px;
+    }
+
+    .tab > div {
+        float: left;
+        margin-right: 16px;
+        margin-top: 110px;
+        padding-bottom: 14px;
+        font-size: 16px;
+        cursor: pointer;
+        color: rgba(69, 79, 93, 0.5);
+    }
+
+    .tab > div:hover {
+        color: #333;
+    }
+
+    .tab > div.active {
+        font-weight: bold;
+        border-bottom: solid 2px #000;
+        color: #333;
+    }
+
+    .ex > div {
+        position: absolute;
+        margin-top: 190px;
+        display: none;
+        font-size: 17px;
+    }
+
+    .ex > div.active {
+        display: block;
+    }
+
+    .phone {
+        margin-top: 160px;
+        margin-left: 60px;
+        position: relative;
+    }
+
+    .effect {
+        position: absolute;
+        top: 200px;
+        left: 40px;
+    }
+
+    .phone_tab {
+        position: absolute;
+        width: 274px;
+        height: 487px;
+        top: 99px;
+        left: 126px;
+        overflow: hidden;
+    }
+
+    .phone_tab img {
+        position: absolute;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    .phone_tab img:first-child {
+        left: 0;
+        z-index: 100;
+    }
+
+    section.account {
+        width: 100%;
+        height: 920px;
+        margin: 0 auto;
+        background-color: #fafafa;
+    }
+
+    section.account > * {
+        float: left;
+    }
+
+    .account .intro {
+        position: absolute;
+        margin-top: 250px;
+        margin-left: 470px;
+        font-size: 48px;
+    }
+
+    .acex {
+        position: absolute;
+        margin-top: 430px;
+        margin-left: 470px;
+        font-size: 17px;
+    }
+
+    .bank {
+        position: absolute;
+        margin-left: 1070px;
+        margin-top: 130px;
+    }
+
+    .bank > li {
+        position: relative;
+        width: 360px;
+        height: 80px;
+        margin: 10px;
+        background-color: #fff;
+        box-shadow: 4px 6px 9px 0 rgba(58, 62, 49, .05), 8px 22px 60px 0 rgba(57, 58, 48, .07);
+    }
+
+    .bank > li.off {
+        opacity: 0;
+    }
+
+    .bank > li.on:nth-child(1) {
+        animation: bank_anim 0.3s;
+    }
+
+    .bank > li.on:nth-child(2) {
+        animation: bank_anim 0.6s;
+    }
+
+    .bank > li.on:nth-child(3) {
+        animation: bank_anim 0.9s;
+    }
+
+    .bank > li.on:nth-child(4) {
+        animation: bank_anim 1.2s;
+    }
+
+    .bank > li.on:nth-child(5) {
+        animation: bank_anim 1.5s;
+    }
+
+    .bank li > * {
+        float: left;
+    }
+
+    .bank li img {
+        margin-left: 10px;
+        margin-top: 25px;
+    }
+
+    .bank li .bank_text > * {
+        float: left;
+    }
+
+    .bank_text .name {
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+
+    .bank_text .balance {
+        position: absolute;
+        margin-top: 30px;
+        right: 20px;
+        font-weight: bold;
+    }
+
+    .bank_button {
+        width: 200px;
+        height: 53px;
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-top: 700px;
+        line-height: 53px;
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 50px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .bank_button:active {
+        background-color: #000;
+    }
+
+    .bank_all {
+        position: absolute;
+        margin-left: 520px;
+        margin-top: 920px;
+        width: 1000px;
+        height: 570px;
+        transition: all 1s;
+        overflow: hidden;
+        z-index: 10;
+    }
+
+    .white {
+        position: absolute;
+        margin-left: 520px;
+        margin-top: 920px;
+        width: 1000px;
+        height: 570px;
+        transition: all 1s;
+        z-index: 11;
+        background-color: #fff;
+    }
+
+    .bank_all ul {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    .bank_all li {
+        width: 244px;
+        height: 380px;
+        float: left;
+    }
+
+    .bank_all li img {
+        margin: 0 auto;
+    }
+
+    @keyframes bank_anim {
+        0% {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    @keyframes rank_anim {
+        0% {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    @keyframes page_anim {
+        0% {
+            opacity: 1;
+            transform: translateY(50px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: none;
+        }
+    }
